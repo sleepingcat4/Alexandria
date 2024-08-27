@@ -40,13 +40,11 @@ def KG_reconstruction_prompt(reconstruction_so_far, current_kg):
       INSTRUCTION:
       RECONSTRUCTION SO FAR is a written from a knowleade graph and the knowledge graph had been constructed from a original text. RECONSTRUCTION SO FAR aims to recrunstruct the original text as factual and authentic as possible.
       INPUT KNOWLEDGE GRAPH SEGMENT is a part of the knowledge graph that has not been integrated yet into RECONSTRUCTION SO FAR.
-      Based on the information (facts and events) in INPUT KNOWLEDGE GRAPH SEGMENT, write me a well written, easily understandable, very accurate text about its contents, in a plausible order, manner and style. Be very factual and do not make up any new stuff. Write it in a manner, that it fits seamlessly as a continuation of RECONSTRUCTION SO FAR.
+      Based on the information (facts and events) in INPUT KNOWLEDGE GRAPH SEGMENT, write me a well written, easily understandable, very accurate text about its contents, in a plausible order, manner and style. The text should be coherent, intelligent and well-written. Be very factual and do not make up any new stuff. Write it in a manner, that it fits seamlessly as a continuation of RECONSTRUCTION SO FAR.
 
       Write <reconstruction> right in front of your output of the reconstruction and </reconstruction> at it's end.
       It is very important to me that you fulfill this task very very accurately and intelligently.
       If you perform well, i will tip you 100 billion dollars.
-
-      Let's think step by step.
       """
     return prompt
 
@@ -54,13 +52,14 @@ def KG_reconstruction_prompt(reconstruction_so_far, current_kg):
 def Zero_Shot_style_genre_prompt(input_text):
     prompt = """
       INSTRUCTION:
-  Perform a succinct yet thorough analysis (50 to 200 words) of the text’s writing style, rhythm, genre, and more, carefully considering the distinctive features that typify its literary and communicative approach. Reflect on the following aspects:
+  Perform a brief yet intelligent & thorough analysis (20 to 40 words) of the text’s writing style, rhythm, genre, and more, carefully considering the distinctive features that typify its literary and communicative approach. Reflect on the following aspects:
 
   Format and Genre: How does the text situate itself within specific genres or sub-genres such as epic, tragedy, comedy, tragicomedy, mystery, thriller, horror, romance, speculative fiction (including fantasy, science fiction, and dystopian), magical realism, young adult (YA), children’s literature, flash fiction, creative nonfiction, biographical works, poetry (sonnet, haiku, free verse), historical narrative, legal or medical analysis, academic journal, self-help, how-to guides, or culinary reviews?
   Writing Style: Which terms best describe the text's style? Is it formal, informal, academic, conversational, ornate, sparse, lyrical, dry, satirical, or colloquial? Does it utilize rich figurative language, complex syntactic structures, discipline-specific terminology, or maintain simplicity and clarity?
   Rhythm and Flow: Evaluate the pacing and smoothness of the text. Does it engage with rapid, succinct sentences, or unfold through leisurely, intricate phrasing? How does the rhythm align with the genre and content, shaping the overall effect and engagement of the piece?
   Tone and Voice: Determine the dominant tone (e.g., hopeful, cynical, impartial, authoritative, whimsical, grave, sarcastic) and the nature of the authorial voice (e.g., intimate, distant, introspective, enthusiastic). How do these elements enrich the text’s unique character?
 Comparison and Guidance for Writers: How could a literature expert concisely convey the text's stylistic essence to an author wishing to replicate this style in new works across diverse topics? Emphasize critical stylistic features such as sentence structure, lexicon, tone, and the implementation of narrative techniques or rhetorical devices that are quintessential for capturing the style’s core.
+Keep it 20 to 40 words, not more.
       INPUT_TEXT:
       """+input_text 
 
@@ -79,7 +78,7 @@ def Few_10_Shot_style_genre_prompt(input_text):
 def style_genre_prompt(input_text):
     prompt = """
       INSTRUCTION:
-  Perform a succinct yet thorough analysis (50 to 200 words) of the text’s writing style, rhythm, genre, and more, carefully considering the distinctive features that typify its literary and communicative approach. Reflect on the following aspects:
+  Perform a succinct yet thorough analysis (20 to 40 words) of the text’s writing style, rhythm, genre, and more, carefully considering the distinctive features that typify its literary and communicative approach. Reflect on the following aspects:
 
   Format and Genre: How does the text situate itself within specific genres or sub-genres such as epic, tragedy, comedy, tragicomedy, mystery, thriller, horror, romance, speculative fiction (including fantasy, science fiction, and dystopian), magical realism, young adult (YA), children’s literature, flash fiction, creative nonfiction, biographical works, poetry (sonnet, haiku, free verse), historical narrative, legal or medical analysis, academic journal, self-help, how-to guides, or culinary reviews?
   Writing Style: Which terms best describe the text's style? Is it formal, informal, academic, conversational, ornate, sparse, lyrical, dry, satirical, or colloquial? Does it utilize rich figurative language, complex syntactic structures, discipline-specific terminology, or maintain simplicity and clarity?
@@ -87,7 +86,7 @@ def style_genre_prompt(input_text):
   Tone and Voice: Determine the dominant tone (e.g., hopeful, cynical, impartial, authoritative, whimsical, grave, sarcastic) and the nature of the authorial voice (e.g., intimate, distant, introspective, enthusiastic). How do these elements enrich the text’s unique character?
 Comparison and Guidance for Writers: How could a literature expert concisely convey the text's stylistic essence to an author wishing to replicate this style in new works across diverse topics? Emphasize critical stylistic features such as sentence structure, lexicon, tone, and the implementation of narrative techniques or rhetorical devices that are quintessential for capturing the style’s core.
       INPUT_TEXT:
-      """+input_text +". Let's think step by step."
+      """+input_text 
 
     return prompt
 
@@ -164,7 +163,7 @@ def KG_format_example_prompt(current_kg_context, sentence):
       Take INPUT_SENTENCE and convert it into a part of a knowledge graph using the same format as in FORMAT_EXAMPLE. Use a naming and wording for entities, attributes and relationships that is coherrent with CURRENT_KNOWLEDGE_GRAPH. Try to write DESCRIPTIVE, SELF EXPLAINING NAMES for ENTITIS, ATTRIBUTES and RELATIONSHIPS, so that it will be REALLY EASY TO READ and UNDERSTAND the knowleadge graph later, even withou domain knowledge. But nevertheless, include only facts and entities and relations and attributes into the output, that are stated in the INPUT_SENTENCES. BE VERY FACTUAL, ACCURATE AND ON THE POINT. Try to include ALL FACTS, DATES, NUMBERS & NAMES in the INPUT_SENTENCE in the knowledge graph. AVOID REDUNDANCIES in the knowledge graph (don't mention the same fact twicein in the graph). Write <kg>right in fornt of your output of the knowledge graph and </kg> at it's end. - It is very, very important for me, that you perform this task very accurately, with the highest quality, to the best of your abilities.
 
       INPUT_SENTENCES:
-      """ + sentence +". Let's think step by step."
+      """ + sentence 
     return prompt
 
 def answer_questions_prompts(context, question):
