@@ -4,7 +4,7 @@ import scripts.prompts
 import scripts.api_key
 
 API_KEY = scripts.api_key.API_KEY
-length = 4000
+length = 30000
 
 def generate_multiple_choice_question(text, number_of_questions):
     """
