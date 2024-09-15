@@ -66,7 +66,7 @@ def evaluate_peformance(df, number_of_questions, file_name_save_questions):
     })
 
     #df.to_parquet(file_name_save_questions, row_group_size=1000)
-    #df.to_csv("dataset/questions_answer_save.csv", encoding='utf-8', index=False)
+    df.to_csv("questions_answer_save.csv", encoding='utf-8', index=False)
 
 
 
