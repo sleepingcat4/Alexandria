@@ -42,7 +42,7 @@ def answer_questions(questions, context):
       # Attempt to get answers from the language model
       try:
 
-          text = ask_LLM ('NousResearch/Nous-Hermes-2-Mixtral-8x7B-DPO',
+          text = ask_LLM ('meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo',
                            "You are a very smart very intelligence assistant who is very helpful.",
                              prompt , API_KEY ,temperature=0.5,top_p=0.95,max_tokens=1000,
                                frequency_penalty=1.1,presence_penalty=1.1)
@@ -56,7 +56,7 @@ def answer_questions(questions, context):
       except:
           try:
               # Retry fetching answers on failure
-              text = ask_LLM ('NousResearch/Nous-Hermes-2-Mixtral-8x7B-DPO',
+              text = ask_LLM ('meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo',
                                "You are a very smart very intelligence assistant who is very helpful.",
                                  prompt , API_KEY ,temperature=0.5,top_p=0.95,max_tokens=1000,
                                    frequency_penalty=1.1,presence_penalty=1.1)
