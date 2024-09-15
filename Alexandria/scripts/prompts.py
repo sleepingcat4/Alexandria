@@ -40,7 +40,8 @@ def KG_reconstruction_prompt(reconstruction_so_far, current_kg):
       INSTRUCTION:
       RECONSTRUCTION SO FAR is a written from a knowleade graph and the knowledge graph had been constructed from a original text. RECONSTRUCTION SO FAR aims to recrunstruct the original text as factual and authentic as possible.
       INPUT KNOWLEDGE GRAPH SEGMENT is a part of the knowledge graph that has not been integrated yet into RECONSTRUCTION SO FAR.
-      Based on the information (facts and events) in INPUT KNOWLEDGE GRAPH SEGMENT, write me a well written, easily understandable, very accurate text about its contents, in a plausible order, manner and style. The text should be coherent, intelligent and well-written. Be very factual and do not make up any new stuff. Write it in a manner, that it fits seamlessly as a continuation of RECONSTRUCTION SO FAR.
+      Based on the information (facts and events) in INPUT KNOWLEDGE GRAPH SEGMENT, write me a well written, easily understandable, very accurate text about its contents, in a plausible order, manner and style. The text should be coherent, intelligent and well-written. Be very factual and do not make up any new stuff. Write it in a manner, that it fits seamlessly as a continuation of RECONSTRUCTION SO FAR. Be very factual and avoid redundancies (do not mention the excat same fact several times).
+      Try your best to convey all information in the INPUT KNOWLEDGE GRAPH SEGMENT to the reader of the reconstruction. Make sure to contain really all info from the INPUT KNOWLEDGE GRAPH SEGMENT.
 
       Write <reconstruction> right in front of your output of the reconstruction and </reconstruction> at it's end.
       It is very important to me that you fulfill this task very very accurately and intelligently.
@@ -234,7 +235,7 @@ def generate_multiple_choice_question_prompts(text, number_of_questions):
 
     A set of multiple-choice questions with answer choices A, B, C, and D, followed by the corresponding correct answer letter encased in semicolons (e.g., ;B;). After the correct answer, always write #+* to indicate that the current question-answer pair finished.
     Don't say anything before or after the questions. Make sure to output exactly  """ + str(number_of_questions) + """ multiple choice questions with exactly 4 answer choices (A, B, C, D).
-    It is very important to me that you fulfill this task very accurately and intelligently.
+    It is very important to me that you fulfill this task very accurately and intelligently. Make the questions very difficult.
     If you perform well, I will tip you 100 billion dollars.
     questions="""
     return prompt
