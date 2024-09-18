@@ -47,7 +47,7 @@ import scripts.api_key
 nltk.download('punkt', quiet=True)
 
 # Configuration
-API_KEY = "bc8ec9e53b89739f63f5e35cc60cfa152f25b24455dbb77e8cb7cf4860bbdfa6"
+API_KEY = scripts.api_key.API_KEY
 model_name = "meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo"
 system_prompt = "You are a very smart very intelligence assistant who is very helpful."
 
