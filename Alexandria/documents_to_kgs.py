@@ -53,7 +53,7 @@ API_BASE = 'https://api.hyprlab.io/v1' #"https://api.together.xyz/v1" # 'https:/
 system_prompt = "You are a very smart very intelligence assistant who is very helpful."
 INPUT_FILE ="pubmed_articles.csv"
 
-characters_to_consider = 20000
+characters_to_consider = 30000
 WORDCHUCHSIZE=200
 outputfilename="my_cool_kgs.csv"
 
