@@ -24,6 +24,17 @@ We need to use the following datasets:
 * [QASPER]()
 * [COVID-QA]()
 
+## LLMs
+We need to use the following LLMs:
+* [Llama 3.1 - 8B](https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct)
+* [Llama 3 - 70B](https://huggingface.co/meta-llama/Meta-Llama-3-70B-Instruct)
+* [Llama-3.2 - 1B](https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct)
+* [Llama-3.2 - 3B](https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct)
+* [Mistral-Small - 22B](https://huggingface.co/mistralai/Mistral-Small-Instruct-2409)
+* [Mixtral - 8*7B](https://huggingface.co/mistralai/Mixtral-8x7B-Instruct-v0.1)
+* [Mixtral - 8*22B](https://huggingface.co/mistralai/Mixtral-8x22B-Instruct-v0.1)
+* [Qwen2.5 - 0.5B](https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct)
+
 
 See [datasets](notebooks/datasets.ipynb) notebook for an example of how to load the datasets provided below. The [extraction](notebooks/extraction.ipynb) notebook shows how to use `Alexandria` to extract text and tables from papers.
 
