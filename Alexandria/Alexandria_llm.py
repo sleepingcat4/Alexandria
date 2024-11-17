@@ -147,6 +147,7 @@ i = 0
 for input_text in concatenated_texts[0:row]:
 
     i = i+1
+    print(i)
     input_string_so_far_list, all_kg_results, all_reconstruction_results = KG_construction_and_reconstruction(input_text)
 
     df = pd.DataFrame({
