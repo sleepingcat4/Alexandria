@@ -57,6 +57,33 @@ You can download pre-trained models here:
 
 Alexandria achieves the following performance:
 
+| Dataset               | Count  | Model         | Size  | Conciseness | Insightfulness | Accuracy | Clarity |
+|-----------------------|--------|---------------|-------|-------------|----------------|----------|---------|
+| SQuAD 2.0            |        | Llama 3.1     | 8B    |             |                |          |         |
+|                       |        | Mistral       | 22B   |             |                |          |         |
+|                       | 11,870 | Llama 3       | 70B   |             |                |          |         |
+|                       |        | Mixtral       | 8x7B  |             |                |          |         |
+|                       |        | Mixtral       | 8x22B |             |                |          |         |
+| RACE                  |        | Llama 3.1     | 8B    |             |                |          |         |
+|                       |        | Mistral       | 22B   |             |                |          |         |
+|                       | 28,000 | Llama 3       | 70B   |             |                |          |         |
+|                       |        | Mixtral       | 8x7B  |             |                |          |         |
+|                       |        | Mixtral       | 8x22B |             |                |          |         |
+| PubMedQA              |        | Llama 3.1     | 8B    |             |                |          |         |
+|                       |        | Mistral       | 22B   |             |                |          |         |
+|                       | 1,000  | Llama 3       | 70B   |             |                |          |         |
+|                       |        | Mixtral       | 8x7B  |             |                |          |         |
+|                       |        | Mixtral       | 8x22B |             |                |          |         |
+| Alexandria-CS         |        | Llama 3.1     | 8B    |             |                |          |         |
+|                       | 2,300  | Llama 3       | 70B   |             |                |          |         |
+|                       |        | Mixtral       | 8x7B  |             |                |          |         |
+|                       |        | Mixtral       | 8x22B |             |                |          |         |
+| Alexandria-Math       |        | Llama 3.1     | 8B    |             |                |          |         |
+|                       | 2,300  | Llama 3       | 70B   |             |                |          |         |
+|                       |        | Mixtral       | 8x7B  |             |                |          |         |
+|                       |        | Mixtral       | 8x22B |             |                |          |         |
+
+
 ### 
 
 
