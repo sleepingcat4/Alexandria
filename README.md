@@ -60,10 +60,32 @@ Alexandria achieves the following performance:
 ### 
 
 
-| Dataset | Macro F1 | Micro F1 |
-| ---------- |---------------- | -------------- |
-| [PWC Leaderboards](https://paperswithcode.com/sota/scientific-results-extraction-on-pwc)     |     XXX         |      XXX      |
-| [NLP-TDMS](https://paperswithcode.com/sota/scientific-results-extraction-on-nlp-tdms-exp)    |    XXX         |      XXX       |
+| Dataset               | Count | Model         | Size  | No Context (%) | Original Context (%) | KG Context (%) | Reconstructed KG Text Context (%) |
+|-----------------------|-------|---------------|-------|----------------|-----------------------|----------------|------------------------------------|
+| SQuAD 2.0            |       | Llama 3.1     | 8B    |                |                       |                |                                    |
+|                       |       | Mistral       | 22B   |                |                       |                |                                    |
+|                       | 11,870| Llama 3       | 70B   |                |                       |                |                                    |
+|                       |       | Mixtral       | 8x7B  |                |                       |                |                                    |
+|                       |       | Mixtral       | 8x22B |                |                       |                |                                    |
+| RACE                  |       | Llama 3.1     | 8B    |                |                       |                |                                    |
+|                       |       | Mistral       | 22B   |                |                       |                |                                    |
+|                       | 28,000| Llama 3       | 70B   |                |                       |                |                                    |
+|                       |       | Mixtral       | 8x7B  |                |                       |                |                                    |
+|                       |       | Mixtral       | 8x22B |                |                       |                |                                    |
+| PubMedQA              |       | Llama 3.1     | 8B    |                |                       |                |                                    |
+|                       |       | Mistral       | 22B   |                |                       |                |                                    |
+|                       | 1,000 | Llama 3       | 70B   |                |                       |                |                                    |
+|                       |       | Mixtral       | 8x7B  |                |                       |                |                                    |
+|                       |       | Mixtral       | 8x22B |                |                       |                |                                    |
+| Alexandria-CS         |       | Llama 3.1     | 8B    |                |                       |                |                                    |
+|                       | 2,300 | Llama 3       | 70B   |                |                       |                |                                    |
+|                       |       | Mixtral       | 8x7B  |                |                       |                |                                    |
+|                       |       | Mixtral       | 8x22B |                |                       |                |                                    |
+| Alexandria-Math       |       | Llama 3.1     | 8B    |                |                       |                |                                    |
+|                       | 2,300 | Llama 3       | 70B   |                |                       |                |                                    |
+|                       |       | Mixtral       | 8x7B  |                |                       |                |                                    |
+|                       |       | Mixtral       | 8x22B |                |                       |                |                                    |
+
 
 
 
