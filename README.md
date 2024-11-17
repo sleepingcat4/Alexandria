@@ -19,7 +19,7 @@ Additionally, `Alexandria` requires `docker` (that can be run without `sudo`). R
 We need to use the following datasets:
 * [SQuAD 2.0](https://huggingface.co/datasets/rajpurkar/squad_v2)
 * [RACE](https://huggingface.co/datasets/ehovy/race)
-* [PubMedQA]([https://aclanthology.org/D19-1259.pdf](https://huggingface.co/datasets/qiaojin/PubMedQA))
+* [PubMedQA](https://huggingface.co/datasets/qiaojin/PubMedQA)
 * [ScienceQA -  can we use it?](https://huggingface.co/datasets/derek-thomas/ScienceQA)
 * [QASPER](https://huggingface.co/datasets/allenai/qasper)
 * [COVID-QA](https://huggingface.co/datasets/deepset/covid_qa_deepset)
