@@ -47,9 +47,27 @@ See the [evaluation](notebooks/evaluation.ipynb) notebook for the full example o
 
 
 
-## Fine-tuning (Need to update)
+## Multi-Agent LLM-Based Knowledge Graph Quality Evaluation (Need to update)
 
-* [pre-training language model](notebooks/finetuning/lm.ipynb) on the ArxivPapers dataset 
+```Prompt
+    You are {{agent_name}}, a {{Domain_name}} specialist who values conciseness and impact.
+    Evaluate the KG, with a focus on delivering impactful insights while remaining concise.
+
+    Text: {{text}}
+    KG: {{kg}}
+
+    Evaluation Criteria:
+    1. Conciseness: Is the KG compact and focused on high-impact information?
+    2. Insightfulness: Does the KG highlight the most important insights about {{Domain_name}}
+    3. Accuracy: Are all relationships and entities correct and relevant?
+    4. Clarity: Does the KG avoid complexity and present information clearly?
+
+    Please provide a score between 0 and 100 for the quality of the KG based on these criteria.
+    Remember: A reward will be granted for completing this evaluation thoroughly and accurately.
+
+    Score: [Your Score]
+    Reason: [Your Reason]
+```
 
 ## Pre-trained Models (Need to update)
 
