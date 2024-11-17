@@ -1,5 +1,4 @@
-# Paper name: Alexandria (Need to update)
-
+# Paper name: Alexandria
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/axcell-automatic-extraction-of-results-from/scientific-results-extraction-on-pwc)]()
 
 This repository is the official implementation of [Alexandria](paper link).
