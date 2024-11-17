@@ -37,8 +37,7 @@ We need to use the following LLMs:
 
 ## New dataset
 
-
-
+The plan is to convert the text to KG for this scientific documents dump from [LAION](https://huggingface.co/laion)
 
 ## Evaluation (Need to update)
 
