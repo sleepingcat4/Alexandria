@@ -1,4 +1,4 @@
-from scripts.llm import ask_LLM
+from scripts.llm import ask_Ollama
 from scripts.split_questions_and_answers import split_to_questions_and_answers
 import scripts.prompts
 import scripts.api_key
@@ -23,7 +23,7 @@ def generate_multiple_choice_question(text, number_of_questions):
     prompt = scripts.prompts.generate_multiple_choice_question_prompts(text, number_of_questions)
     # Assuming `ask_LLM` is a predefined function that sends the prompt to a language model and receives generated text.
     #print(prompt)
-    questions_and_answers =  ask_LLM ('NousResearch/Nous-Hermes-2-Mixtral-8x7B-DPO',
+    questions_and_answers =  ask_Ollama ('NousResearch/Nous-Hermes-2-Mixtral-8x7B-DPO',
                                        "You are a very smart very intelligence assistant who is very helpful.",
                                          prompt , API_KEY ,temperature=0.5,top_p=0.95,max_tokens=length, frequency_penalty=1.1,
                                          presence_penalty=1.1)
@@ -38,7 +38,7 @@ def generate_multiple_choice_question(text, number_of_questions):
     except:
         try:
             # If splitting fails, retry the question generation and splitting process #"mistral-large-latest"
-            questions_and_answers =  ask_LLM ("NousResearch/Nous-Hermes-2-Mixtral-8x7B-DPO", 
+            questions_and_answers =  ask_Ollama ("NousResearch/Nous-Hermes-2-Mixtral-8x7B-DPO", 
                                               "You are a very smart, intelligent, helpful assistant. You try your best to do whatever the user asks you. You are very good at coding and at common sense.",
                                                 prompt, temperature=0.5, top_p=0.95,max_tokens=length)
 
