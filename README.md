@@ -41,9 +41,11 @@ The plan is to convert the text to KG for this scientific documents dump from [L
 
 ## Evaluation (Need to update)
 
-See the [evaluation](notebooks/evaluation.ipynb) notebook for the full example of how to evaluate Alexandria on the Arxive dataset. 
+See the [evaluation](notebooks/evaluation.ipynb) notebook for the full example of how to evaluate text to KG convertion on the different datasets. 
 
 ### Prompt Engineering (Need to update)
+
+
 
 ## Fine-tuning (Need to update)
 
