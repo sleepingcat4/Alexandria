@@ -16,9 +16,13 @@ conda env create -f environment.yml
 Additionally, `Alexandria` requires `docker` (that can be run without `sudo`). Run `scripts/pull_docker_images.sh` to download the necessary images.
 
 ## Datasets (Need to update)
-We publish the following datasets:
-* [ArxivPapers](https://github.com/paperswithcode/axcell/releases/download/v1.0/arxiv-papers.csv.xz)
-* [other datasets](......)
+We used the following datasets:
+* [SQuAD 2.0](https://huggingface.co/datasets/rajpurkar/squad_v2)
+* [RACE](https://huggingface.co/datasets/ehovy/race)
+* [PubMedQA]()
+* [ScienceQA]()
+* [QASPER]()
+* [COVID-QA]()
 
 
 See [datasets](notebooks/datasets.ipynb) notebook for an example of how to load the datasets provided below. The [extraction](notebooks/extraction.ipynb) notebook shows how to use `Alexandria` to extract text and tables from papers.
