@@ -55,7 +55,7 @@ You can download pre-trained models here:
 
 ## Results (Need to update)
 
-Alexandria achieves the following performance:
+Alexandria achieves the following performance (For KG quality check):
 
 | Dataset               | Count  | Model         | Size  | Conciseness | Insightfulness | Accuracy | Clarity |
 |-----------------------|--------|---------------|-------|-------------|----------------|----------|---------|
@@ -85,6 +85,8 @@ Alexandria achieves the following performance:
 
 
 ### 
+
+Alexandria achieves the following performance (How does the human-generated QA system work with -No Context- Original Context - KG Context - Reconstructed KG Text Context?):
 
 
 | Dataset               | Count | Model         | Size  | No Context (%) | Original Context (%) | KG Context (%) | Reconstructed KG Text Context (%) |
