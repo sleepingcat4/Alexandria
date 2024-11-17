@@ -36,8 +36,6 @@ We need to use the following LLMs:
 * [Qwen2.5 - 0.5B](https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct)
 
 
-See [datasets](notebooks/datasets.ipynb) notebook for an example of how to load the datasets provided below. The [extraction](notebooks/extraction.ipynb) notebook shows how to use `Alexandria` to extract text and tables from papers.
-
 ## Evaluation (Need to update)
 
 See the [evaluation](notebooks/evaluation.ipynb) notebook for the full example of how to evaluate Alexandria on the Arxive dataset. 
