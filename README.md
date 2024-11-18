@@ -47,8 +47,7 @@ See the [evaluation](notebooks/evaluation.ipynb) notebook for the full example o
 
 
 
-## Multi-Agent LLM-Based Knowledge Graph Quality Evaluation (Need to update)
-
+## Multi-Agent LLM-Based Knowledge Graph Quality Evaluation
 ```Prompt
     You are {{agent_name}}, a {{Domain_name}} specialist who values conciseness and impact.
     Evaluate the KG, with a focus on delivering impactful insights while remaining concise.
