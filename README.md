@@ -15,6 +15,10 @@ conda env create -f environment.yml
 
 Additionally, `Alexandria` requires `docker` (that can be run without `sudo`). Run `scripts/pull_docker_images.sh` to download the necessary images.
 
+## Need to read (Gollam Rabby)
+
+[Google KG](https://huggingface.co/datasets/google-research-datasets/kelm)
+
 ## Datasets (Benchmark)
 We need to use the following datasets:
 * [SQuAD 2.0](https://huggingface.co/datasets/rajpurkar/squad_v2)
