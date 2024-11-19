@@ -122,29 +122,34 @@ Alexandria achieves the following performance (How does the human-generated QA s
 
 | Dataset               | Count | Model         | Size  | No Context (%) | Original Context (%) | KG Context (%) | Reconstructed KG Text Context (%) |
 |-----------------------|-------|---------------|-------|----------------|-----------------------|----------------|------------------------------------|
-| SQuAD 2.0            |       | Llama 3.1     | 8B    |                |                       |                |                                    |
+| SQuAD 2.0             |       | Llama 3.1     | 8B    |                |                       |                |                                    |
 |                       |       | Mistral       | 22B   |                |                       |                |                                    |
 |                       | 11,870| Llama 3       | 70B   |                |                       |                |                                    |
 |                       |       | Mixtral       | 8x7B  |                |                       |                |                                    |
 |                       |       | Mixtral       | 8x22B |                |                       |                |                                    |
+|                       |       | OneKE         |       |                |                       |                |                                    |
 | RACE                  |       | Llama 3.1     | 8B    |                |                       |                |                                    |
 |                       |       | Mistral       | 22B   |                |                       |                |                                    |
 |                       | 28,000| Llama 3       | 70B   |                |                       |                |                                    |
 |                       |       | Mixtral       | 8x7B  |                |                       |                |                                    |
 |                       |       | Mixtral       | 8x22B |                |                       |                |                                    |
+|                       |       | OneKE         |       |                |                       |                |                                    |
 | PubMedQA              |       | Llama 3.1     | 8B    |                |                       |                |                                    |
 |                       |       | Mistral       | 22B   |                |                       |                |                                    |
 |                       | 1,000 | Llama 3       | 70B   |                |                       |                |                                    |
 |                       |       | Mixtral       | 8x7B  |                |                       |                |                                    |
 |                       |       | Mixtral       | 8x22B |                |                       |                |                                    |
+|                       |       | OneKE         |       |                |                       |                |                                    |
 | Alexandria-CS         |       | Llama 3.1     | 8B    |                |                       |                |                                    |
 |                       | 2,300 | Llama 3       | 70B   |                |                       |                |                                    |
 |                       |       | Mixtral       | 8x7B  |                |                       |                |                                    |
 |                       |       | Mixtral       | 8x22B |                |                       |                |                                    |
+|                       |       | OneKE         |       |                |                       |                |                                    |
 | Alexandria-Math       |       | Llama 3.1     | 8B    |                |                       |                |                                    |
 |                       | 2,300 | Llama 3       | 70B   |                |                       |                |                                    |
 |                       |       | Mixtral       | 8x7B  |                |                       |                |                                    |
 |                       |       | Mixtral       | 8x22B |                |                       |                |                                    |
+|                       |       | OneKE         |       |                |                       |                |                                    |
 
 
 
