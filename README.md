@@ -91,13 +91,10 @@ Alexandria achieves the following performance (For KG quality check):
 |                       | 11,870 | Llama 3       | 70B   |             |                |          |         |
 |                       |        | Mixtral       | 8x7B  |             |                |          |         |
 |                       |        | Mixtral       | 8x22B |             |                |          |         |
-
 |                       |        | Llama-3.2     | 1B    |             |                |          |         |
 |                       |        | Llama-3.2     | 3B    |             |                |          |         |
 |                       |        | Qwen2.5       | 0.5B  |             |                |          |         |
 |                       |        | OneKE         |       |             |                |          |         |
-
-
 | RACE                  |        | Llama 3.1     | 8B    |             |                |          |         |
 |                       |        | Mistral       | 22B   |             |                |          |         |
 |                       | 28,000 | Llama 3       | 70B   |             |                |          |         |
@@ -107,8 +104,6 @@ Alexandria achieves the following performance (For KG quality check):
 |                       |        | Llama-3.2     | 3B    |             |                |          |         |
 |                       |        | Qwen2.5       | 0.5B  |             |                |          |         |
 |                       |        | OneKE         |       |             |                |          |         |
-
-
 | PubMedQA              |        | Llama 3.1     | 8B    |             |                |          |         |
 |                       |        | Mistral       | 22B   |             |                |          |         |
 |                       | 1,000  | Llama 3       | 70B   |             |                |          |         |
@@ -118,8 +113,6 @@ Alexandria achieves the following performance (For KG quality check):
 |                       |        | Llama-3.2     | 3B    |             |                |          |         |
 |                       |        | Qwen2.5       | 0.5B  |             |                |          |         |
 |                       |        | OneKE         |       |             |                |          |         |
-
-
 | ScienceQA             |        | Llama 3.1     | 8B    |             |                |          |         |
 |                       |        | Mistral       | 22B   |             |                |          |         |
 |                       | xxxxx  | Llama 3       | 70B   |             |                |          |         |
@@ -129,7 +122,6 @@ Alexandria achieves the following performance (For KG quality check):
 |                       |        | Llama-3.2     | 3B    |             |                |          |         |
 |                       |        | Qwen2.5       | 0.5B  |             |                |          |         |
 |                       |        | OneKE         |       |             |                |          |         |
-
 | QASPER                |        | Llama 3.1     | 8B    |             |                |          |         |
 |                       |        | Mistral       | 22B   |             |                |          |         |
 |                       | xxxxx  | Llama 3       | 70B   |             |                |          |         |
@@ -139,7 +131,6 @@ Alexandria achieves the following performance (For KG quality check):
 |                       |        | Llama-3.2     | 3B    |             |                |          |         |
 |                       |        | Qwen2.5       | 0.5B  |             |                |          |         |
 |                       |        | OneKE         |       |             |                |          |         |
-
 | COVID-QA              |        | Llama 3.1     | 8B    |             |                |          |         |
 |                       |        | Mistral       | 22B   |             |                |          |         |
 |                       | xxxxx  | Llama 3       | 70B   |             |                |          |         |
@@ -166,8 +157,6 @@ Alexandria achieves the following performance (How does the human-generated QA s
 |                       |       | Llama-3.2     | 3B    |                |                       |                |                                    |
 |                       |       | Qwen2.5       | 0.5B  |                |                       |                |                                    |
 |                       |       | OneKE         |       |                |                       |                |                                    |
-
-
 | RACE                  |       | Llama 3.1     | 8B    |                |                       |                |                                    |
 |                       |       | Mistral       | 22B   |                |                       |                |                                    |
 |                       | 28,000| Llama 3       | 70B   |                |                       |                |                                    |
@@ -177,8 +166,6 @@ Alexandria achieves the following performance (How does the human-generated QA s
 |                       |       | Llama-3.2     | 3B    |                |                       |                |                                    |
 |                       |       | Qwen2.5       | 0.5B  |                |                       |                |                                    |
 |                       |       | OneKE         |       |                |                       |                |                                    |
-
-
 | PubMedQA              |       | Llama 3.1     | 8B    |                |                       |                |                                    |
 |                       |       | Mistral       | 22B   |                |                       |                |                                    |
 |                       | 1,000 | Llama 3       | 70B   |                |                       |                |                                    |
@@ -188,8 +175,6 @@ Alexandria achieves the following performance (How does the human-generated QA s
 |                       |       | Llama-3.2     | 3B    |                |                       |                |                                    |
 |                       |       | Qwen2.5       | 0.5B  |                |                       |                |                                    |
 |                       |       | OneKE         |       |                |                       |                |                                    |
-
-
 | ScienceQA             |       | Llama 3.1     | 8B    |                |                       |                |                                    |
 |                       |       | Mistral       | 22B   |                |                       |                |                                    |
 |                       | xxxxx | Llama 3       | 70B   |                |                       |                |                                    |
@@ -199,8 +184,6 @@ Alexandria achieves the following performance (How does the human-generated QA s
 |                       |       | Llama-3.2     | 3B    |                |                       |                |                                    |
 |                       |       | Qwen2.5       | 0.5B  |                |                       |                |                                    |
 |                       |       | OneKE         |       |                |                       |                |                                    |
-
-
 | QASPER                |       | Llama 3.1     | 8B    |                |                       |                |                                    |
 |                       |       | Mistral       | 22B   |                |                       |                |                                    |
 |                       | xxxxx | Llama 3       | 70B   |                |                       |                |                                    |
@@ -210,8 +193,6 @@ Alexandria achieves the following performance (How does the human-generated QA s
 |                       |       | Llama-3.2     | 3B    |                |                       |                |                                    |
 |                       |       | Qwen2.5       | 0.5B  |                |                       |                |                                    |
 |                       |       | OneKE         |       |                |                       |                |                                    |
-
-
 | COVID-QA              |       | Llama 3.1     | 8B    |                |                       |                |                                    |
 |                       |       | Mistral       | 22B   |                |                       |                |                                    |
 |                       | xxxxx | Llama 3       | 70B   |                |                       |                |                                    |
