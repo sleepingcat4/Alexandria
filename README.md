@@ -38,6 +38,7 @@ We need to use the following LLMs:
 * [Mixtral - 8*7B](https://huggingface.co/mistralai/Mixtral-8x7B-Instruct-v0.1)
 * [Mixtral - 8*22B](https://huggingface.co/mistralai/Mixtral-8x22B-Instruct-v0.1)
 * [Qwen2.5 - 0.5B](https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct)
+* [OneKE](https://github.com/zjunlp/DeepKE?tab=readme-ov-file)
 
 ## New dataset
 
@@ -85,35 +86,69 @@ Alexandria achieves the following performance (For KG quality check):
 
 | Dataset               | Count  | Model         | Size  | Conciseness | Insightfulness | Accuracy | Clarity |
 |-----------------------|--------|---------------|-------|-------------|----------------|----------|---------|
-| SQuAD 2.0            |        | Llama 3.1     | 8B    |             |                |          |         |
+| SQuAD 2.0             |        | Llama 3.1     | 8B    |             |                |          |         |
 |                       |        | Mistral       | 22B   |             |                |          |         |
 |                       | 11,870 | Llama 3       | 70B   |             |                |          |         |
 |                       |        | Mixtral       | 8x7B  |             |                |          |         |
 |                       |        | Mixtral       | 8x22B |             |                |          |         |
+
+|                       |        | Llama-3.2     | 1B    |             |                |          |         |
+|                       |        | Llama-3.2     | 3B    |             |                |          |         |
+|                       |        | Qwen2.5       | 0.5B  |             |                |          |         |
 |                       |        | OneKE         |       |             |                |          |         |
+
+
 | RACE                  |        | Llama 3.1     | 8B    |             |                |          |         |
 |                       |        | Mistral       | 22B   |             |                |          |         |
 |                       | 28,000 | Llama 3       | 70B   |             |                |          |         |
 |                       |        | Mixtral       | 8x7B  |             |                |          |         |
 |                       |        | Mixtral       | 8x22B |             |                |          |         |
+|                       |        | Llama-3.2     | 1B    |             |                |          |         |
+|                       |        | Llama-3.2     | 3B    |             |                |          |         |
+|                       |        | Qwen2.5       | 0.5B  |             |                |          |         |
 |                       |        | OneKE         |       |             |                |          |         |
+
+
 | PubMedQA              |        | Llama 3.1     | 8B    |             |                |          |         |
 |                       |        | Mistral       | 22B   |             |                |          |         |
 |                       | 1,000  | Llama 3       | 70B   |             |                |          |         |
 |                       |        | Mixtral       | 8x7B  |             |                |          |         |
 |                       |        | Mixtral       | 8x22B |             |                |          |         |
-|                       |        | OneKE         |       |             |                |          |         |
-| Alexandria-CS         |        | Llama 3.1     | 8B    |             |                |          |         |
-|                       | 2,300  | Llama 3       | 70B   |             |                |          |         |
-|                       |        | Mixtral       | 8x7B  |             |                |          |         |
-|                       |        | Mixtral       | 8x22B |             |                |          |         |
-|                       |        | OneKE         |       |             |                |          |         |
-| Alexandria-Math       |        | Llama 3.1     | 8B    |             |                |          |         |
-|                       | 2,300  | Llama 3       | 70B   |             |                |          |         |
-|                       |        | Mixtral       | 8x7B  |             |                |          |         |
-|                       |        | Mixtral       | 8x22B |             |                |          |         |
+|                       |        | Llama-3.2     | 1B    |             |                |          |         |
+|                       |        | Llama-3.2     | 3B    |             |                |          |         |
+|                       |        | Qwen2.5       | 0.5B  |             |                |          |         |
 |                       |        | OneKE         |       |             |                |          |         |
 
+
+| ScienceQA             |        | Llama 3.1     | 8B    |             |                |          |         |
+|                       |        | Mistral       | 22B   |             |                |          |         |
+|                       | xxxxx  | Llama 3       | 70B   |             |                |          |         |
+|                       |        | Mixtral       | 8x7B  |             |                |          |         |
+|                       |        | Mixtral       | 8x22B |             |                |          |         |
+|                       |        | Llama-3.2     | 1B    |             |                |          |         |
+|                       |        | Llama-3.2     | 3B    |             |                |          |         |
+|                       |        | Qwen2.5       | 0.5B  |             |                |          |         |
+|                       |        | OneKE         |       |             |                |          |         |
+
+| QASPER                |        | Llama 3.1     | 8B    |             |                |          |         |
+|                       |        | Mistral       | 22B   |             |                |          |         |
+|                       | xxxxx  | Llama 3       | 70B   |             |                |          |         |
+|                       |        | Mixtral       | 8x7B  |             |                |          |         |
+|                       |        | Mixtral       | 8x22B |             |                |          |         |
+|                       |        | Llama-3.2     | 1B    |             |                |          |         |
+|                       |        | Llama-3.2     | 3B    |             |                |          |         |
+|                       |        | Qwen2.5       | 0.5B  |             |                |          |         |
+|                       |        | OneKE         |       |             |                |          |         |
+
+| COVID-QA              |        | Llama 3.1     | 8B    |             |                |          |         |
+|                       |        | Mistral       | 22B   |             |                |          |         |
+|                       | xxxxx  | Llama 3       | 70B   |             |                |          |         |
+|                       |        | Mixtral       | 8x7B  |             |                |          |         |
+|                       |        | Mixtral       | 8x22B |             |                |          |         |
+|                       |        | Llama-3.2     | 1B    |             |                |          |         |
+|                       |        | Llama-3.2     | 3B    |             |                |          |         |
+|                       |        | Qwen2.5       | 0.5B  |             |                |          |         |
+|                       |        | OneKE         |       |             |                |          |         |
 
 ### 
 
@@ -127,28 +162,64 @@ Alexandria achieves the following performance (How does the human-generated QA s
 |                       | 11,870| Llama 3       | 70B   |                |                       |                |                                    |
 |                       |       | Mixtral       | 8x7B  |                |                       |                |                                    |
 |                       |       | Mixtral       | 8x22B |                |                       |                |                                    |
+|                       |       | Llama-3.2     | 1B    |                |                       |                |                                    |
+|                       |       | Llama-3.2     | 3B    |                |                       |                |                                    |
+|                       |       | Qwen2.5       | 0.5B  |                |                       |                |                                    |
 |                       |       | OneKE         |       |                |                       |                |                                    |
+
+
 | RACE                  |       | Llama 3.1     | 8B    |                |                       |                |                                    |
 |                       |       | Mistral       | 22B   |                |                       |                |                                    |
 |                       | 28,000| Llama 3       | 70B   |                |                       |                |                                    |
 |                       |       | Mixtral       | 8x7B  |                |                       |                |                                    |
 |                       |       | Mixtral       | 8x22B |                |                       |                |                                    |
+|                       |       | Llama-3.2     | 1B    |                |                       |                |                                    |
+|                       |       | Llama-3.2     | 3B    |                |                       |                |                                    |
+|                       |       | Qwen2.5       | 0.5B  |                |                       |                |                                    |
 |                       |       | OneKE         |       |                |                       |                |                                    |
+
+
 | PubMedQA              |       | Llama 3.1     | 8B    |                |                       |                |                                    |
 |                       |       | Mistral       | 22B   |                |                       |                |                                    |
 |                       | 1,000 | Llama 3       | 70B   |                |                       |                |                                    |
 |                       |       | Mixtral       | 8x7B  |                |                       |                |                                    |
 |                       |       | Mixtral       | 8x22B |                |                       |                |                                    |
+|                       |       | Llama-3.2     | 1B    |                |                       |                |                                    |
+|                       |       | Llama-3.2     | 3B    |                |                       |                |                                    |
+|                       |       | Qwen2.5       | 0.5B  |                |                       |                |                                    |
 |                       |       | OneKE         |       |                |                       |                |                                    |
-| Alexandria-CS         |       | Llama 3.1     | 8B    |                |                       |                |                                    |
-|                       | 2,300 | Llama 3       | 70B   |                |                       |                |                                    |
+
+
+| ScienceQA             |       | Llama 3.1     | 8B    |                |                       |                |                                    |
+|                       |       | Mistral       | 22B   |                |                       |                |                                    |
+|                       | xxxxx | Llama 3       | 70B   |                |                       |                |                                    |
 |                       |       | Mixtral       | 8x7B  |                |                       |                |                                    |
 |                       |       | Mixtral       | 8x22B |                |                       |                |                                    |
+|                       |       | Llama-3.2     | 1B    |                |                       |                |                                    |
+|                       |       | Llama-3.2     | 3B    |                |                       |                |                                    |
+|                       |       | Qwen2.5       | 0.5B  |                |                       |                |                                    |
 |                       |       | OneKE         |       |                |                       |                |                                    |
-| Alexandria-Math       |       | Llama 3.1     | 8B    |                |                       |                |                                    |
-|                       | 2,300 | Llama 3       | 70B   |                |                       |                |                                    |
+
+
+| QASPER                |       | Llama 3.1     | 8B    |                |                       |                |                                    |
+|                       |       | Mistral       | 22B   |                |                       |                |                                    |
+|                       | xxxxx | Llama 3       | 70B   |                |                       |                |                                    |
 |                       |       | Mixtral       | 8x7B  |                |                       |                |                                    |
 |                       |       | Mixtral       | 8x22B |                |                       |                |                                    |
+|                       |       | Llama-3.2     | 1B    |                |                       |                |                                    |
+|                       |       | Llama-3.2     | 3B    |                |                       |                |                                    |
+|                       |       | Qwen2.5       | 0.5B  |                |                       |                |                                    |
+|                       |       | OneKE         |       |                |                       |                |                                    |
+
+
+| COVID-QA              |       | Llama 3.1     | 8B    |                |                       |                |                                    |
+|                       |       | Mistral       | 22B   |                |                       |                |                                    |
+|                       | xxxxx | Llama 3       | 70B   |                |                       |                |                                    |
+|                       |       | Mixtral       | 8x7B  |                |                       |                |                                    |
+|                       |       | Mixtral       | 8x22B |                |                       |                |                                    |
+|                       |       | Llama-3.2     | 1B    |                |                       |                |                                    |
+|                       |       | Llama-3.2     | 3B    |                |                       |                |                                    |
+|                       |       | Qwen2.5       | 0.5B  |                |                       |                |                                    |
 |                       |       | OneKE         |       |                |                       |                |                                    |
 
 
