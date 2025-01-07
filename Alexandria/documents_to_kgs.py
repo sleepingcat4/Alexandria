@@ -338,7 +338,7 @@ def KG_construction(input_text, model, preprocessing_type="none"):
         current_kg_context = ' '.join(current_kg_context)
 
         # Generate the prompt for knowledge graph construction
-        text = scripts.prompts.KG_format_example_prompt2(current_kg_context, sentence)
+        text = scripts.prompts.KG_format_example_prompt_many_examplesplus(current_kg_context, sentence)
         #print("Prompt:", text)
 
         # Generate the knowledge graph segment
